@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rige04 - Illustrator Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="antialiased">
+
+    <div class="container mx-auto px-6 py-8 md:py-16">
+        <!-- Header Section -->
+        <header class="flex flex-col items-center text-center mb-16">
+            <!-- Artist Info -->
+            <div class="flex flex-col items-center w-full">
+                 <img src="images/about/1.png" alt="Rige04 Avatar" class="rounded-full w-24 h-24 shadow-lg border-2 border-[var(--color-accent)]">
+                <h1 class="font-poppins font-bold text-4xl md:text-5xl mt-4 text-[var(--color-text)]">Rige04</h1>
+                <p class="text-base text-[var(--color-text-muted)] mt-2 max-w-md en">
+                    I'm a Brazilian artist. Thanks for stopping by!
+                </p>
+                <p class="text-base text-[var(--color-text-muted)] mt-2 max-w-md pt-br hidden">
+                    Sou uma artista do Brasil. Obrigada pela visita!
+                </p>
+            </div>
+            
+            <!-- Navigation -->
+            <nav class="flex flex-wrap justify-center gap-2 mt-8 w-full border-y border-[var(--color-secondary)] py-4">
+                <a href="#portfolio" class="nav-link py-2 px-4 rounded-lg font-semibold en">Portfolio</a>
+                <a href="#portfolio" class="nav-link py-2 px-4 rounded-lg font-semibold pt-br hidden">Portfólio</a>
+                <a href="#commissions" class="nav-link py-2 px-4 rounded-lg font-semibold en">Commissions</a>
+                <a href="#commissions" class="nav-link py-2 px-4 rounded-lg font-semibold pt-br hidden">Encomendas</a>
+                <a href="#about" class="nav-link py-2 px-4 rounded-lg font-semibold en">About & Contact</a>
+                <a href="#about" class="nav-link py-2 px-4 rounded-lg font-semibold pt-br hidden">Sobre & Contato</a>
+                 <!-- Social Links -->
+                <div class="social-links flex items-center gap-4 ml-4">
+                    <a href="https://www.instagram.com/rige04" target="_blank" class="text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition duration-300">
+                        <img src="images/instagram.svg" alt="Instagram" class="w-5 h-5">
+                    </a>
+                    <a href="https://www.x.com/rige04" target="_blank" class="text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition duration-300">
+                        <img src="images/x.svg" alt="X (Twitter)" class="w-5 h-5">
+                    </a>
+                    <a href="https://www.behance.net/rige04" target="_blank" class="text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition duration-300">
+                        <img src="images/behance.svg" alt="Behance" class="w-5 h-5">
+                    </a>
+                </div>
+                <!-- Language Switcher -->
+                <div class="flex items-center gap-2 ml-4">
+                    <button class="lang-btn text-xs font-bold py-1 px-3 rounded-full transition duration-300 data-[active=true]:bg-[var(--color-primary)] data-[active=true]:text-[var(--color-bg)]" data-lang="en">EN</button>
+                    <button class="lang-btn text-xs font-bold py-1 px-3 rounded-full transition duration-300 data-[active=true]:bg-[var(--color-primary)] data-[active=true]:text-[var(--color-bg)]" data-lang="pt-br">PT</button>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Portfolio Section -->
+            <section id="portfolio">
+                <div class="portfolio-container relative">
+                    <!-- Portfolio Grid (horizontal scrollable) -->
+                    <div class="portfolio-scroll-container overflow-x-auto">
+                        <div class="portfolio-grid flex gap-4 sm:gap-6 min-w-max">
+                            <!-- Portfolio Items -->
+                            <div class="portfolio-item group aspect-content aspect-w-9 aspect-h-16 relative overflow-hidden rounded-lg fade-in-up cursor-pointer flex-shrink-0 w-56 sm:w-80 lg:w-96" data-src="images/1/full.png">
+                                <img src="images/1/thumbnail.png" alt="angelgirl" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105">
+                            </div>
+                            <div class="portfolio-item group aspect-content aspect-w-9 aspect-h-16 relative overflow-hidden rounded-lg fade-in-up cursor-pointer flex-shrink-0 w-56 sm:w-80 lg:w-96" style="transition-delay: 50ms;" data-src="images/2/full.png">
+                                <img src="images/2/thumbnail.png" alt="redstudy" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105">
+                            </div>
+                            <div class="portfolio-item group aspect-content aspect-w-9 aspect-h-16 relative overflow-hidden rounded-lg fade-in-up cursor-pointer flex-shrink-0 w-56 sm:w-80 lg:w-96" style="transition-delay: 100ms;" data-src="images/3/full.png">
+                                <img src="images/3/thumbnail.png" alt="5gabyy" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105">
+                            </div>
+                            <div class="portfolio-item group aspect-content aspect-w-9 aspect-h-16 relative overflow-hidden rounded-lg fade-in-up cursor-pointer flex-shrink-0 w-56 sm:w-80 lg:w-96" style="transition-delay: 150ms;" data-src="images/4/full.png">
+                                <img src="images/4/thumbnail.png" alt="8teste2" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105">
+                            </div>
+                            <div class="portfolio-item group aspect-content aspect-w-9 aspect-h-16 relative overflow-hidden rounded-lg fade-in-up cursor-pointer flex-shrink-0 w-56 sm:w-80 lg:w-96" style="transition-delay: 200ms;" data-src="images/5/full.png">
+                                <img src="images/5/thumbnail.png" alt="11tktk" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105">
+                            </div>
+                            <div class="portfolio-item group aspect-content aspect-w-9 aspect-h-16 relative overflow-hidden rounded-lg fade-in-up cursor-pointer flex-shrink-0 w-56 sm:w-80 lg:w-96" style="transition-delay: 250ms;" data-src="images/6/full.png">
+                                <img src="images/6/thumbnail.png" alt="15trabalho a3 faculdade" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105">
+                            </div>
+                            <div class="portfolio-item group aspect-content aspect-w-9 aspect-h-16 relative overflow-hidden rounded-lg fade-in-up cursor-pointer flex-shrink-0 w-56 sm:w-80 lg:w-96" style="transition-delay: 300ms;" data-src="images/7/full.png">
+                                <img src="images/7/thumbnail.png" alt="44 gungirl" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105">
+                            </div>
+                            <div class="portfolio-item group aspect-content aspect-w-9 aspect-h-16 relative overflow-hidden rounded-lg fade-in-up cursor-pointer flex-shrink-0 w-56 sm:w-80 lg:w-96" style="transition-delay: 350ms;" data-src="images/8/full.png">
+                                <img src="images/8/thumbnail.png" alt="9margot3" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105">
+                            </div>
+                            <div class="portfolio-item group aspect-content aspect-w-9 aspect-h-16 relative overflow-hidden rounded-lg fade-in-up cursor-pointer flex-shrink-0 w-56 sm:w-80 lg:w-96" style="transition-delay: 400ms;" data-src="images/9/full.png">
+                                <img src="images/9/thumbnail.png" alt="24arya" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105">
+                            </div>
+                            <div class="portfolio-item group aspect-content aspect-w-9 aspect-h-16 relative overflow-hidden rounded-lg fade-in-up cursor-pointer flex-shrink-0 w-56 sm:w-80 lg:w-96" style="transition-delay: 450ms;" data-src="images/10/full.png">
+                                <img src="images/10/thumbnail.png" alt="10" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105">
+                            </div>
+                            <div class="portfolio-item group aspect-content aspect-w-9 aspect-h-16 relative overflow-hidden rounded-lg fade-in-up cursor-pointer flex-shrink-0 w-56 sm:w-80 lg:w-96" style="transition-delay: 500ms;" data-src="images/11/full.png">
+                                <img src="images/11/thumbnail.png" alt="11" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105">
+                            </div>
+                            <div class="portfolio-item group aspect-content aspect-w-9 aspect-h-16 relative overflow-hidden rounded-lg fade-in-up cursor-pointer flex-shrink-0 w-56 sm:w-80 lg:w-96" style="transition-delay: 550ms;" data-src="images/12/full.png">
+                                <img src="images/12/thumbnail.png" alt="12jynxx1_v3" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105">
+                            </div>
+                            <div class="portfolio-item group aspect-content aspect-w-9 aspect-h-16 relative overflow-hidden rounded-lg fade-in-up cursor-pointer flex-shrink-0 w-56 sm:w-80 lg:w-96" style="transition-delay: 600ms;" data-src="images/13/full.png">
+                                <img src="images/13/thumbnail.png" alt="16" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105">
+                            </div>
+                            <div class="portfolio-item group aspect-content aspect-w-9 aspect-h-16 relative overflow-hidden rounded-lg fade-in-up cursor-pointer flex-shrink-0 w-56 sm:w-80 lg:w-96" style="transition-delay: 650ms;" data-src="images/14/full.png">
+                                <img src="images/14/thumbnail.png" alt="18@autoraburns" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105">
+                            </div>
+                            <div class="portfolio-item group aspect-content aspect-w-9 aspect-h-16 relative overflow-hidden rounded-lg fade-in-up cursor-pointer flex-shrink-0 w-56 sm:w-80 lg:w-96" style="transition-delay: 700ms;" data-src="images/15/full.png">
+                                <img src="images/15/thumbnail.png" alt="29. arya comm" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105">
+                            </div>
+                            <div class="portfolio-item group aspect-content aspect-w-9 aspect-h-16 relative overflow-hidden rounded-lg fade-in-up cursor-pointer flex-shrink-0 w-56 sm:w-80 lg:w-96" style="transition-delay: 750ms;" data-src="images/16/full.png">
+                                <img src="images/16/thumbnail.png" alt="NVFDA - Elise e Caio" class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Scroll Hint -->
+                    <div class="text-center mt-6">
+                        <p class="text-sm text-[var(--color-accent)]">
+                            <span class="en">← Scroll to see more artwork →</span>
+                            <span class="pt-br hidden">← Role para ver mais arte →</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+             <!-- Commissions Section -->
+            <section id="commissions" class="mt-24 py-16">
+                <div class="text-center max-w-4xl mx-auto">
+                    <h2 class="font-poppins text-3xl font-bold text-[var(--color-text)] fade-in-up"><span class="en">Commissions Info</span><span class="pt-br hidden">Informações de Encomendas</span></h2>
+                    <p class="mt-4 text-[var(--color-text-muted)] leading-relaxed fade-in-up" style="transition-delay: 100ms;">
+                        <span class="en">I am currently open for new projects and collaborations. Choose from the commission types below or contact me for custom requests!</span>
+                        <span class="pt-br hidden">Estou atualmente aberta para novos projetos e colaborações. Escolha entre os tipos de encomenda abaixo ou entre em contato para pedidos personalizados!</span>
+                    </p>
+                    
+                    <!-- Rules & Terms -->
+                    <div class="mt-8 bg-[var(--color-secondary)] rounded-lg p-6 fade-in-up" style="transition-delay: 600ms;">
+                        <h3 class="font-poppins text-xl font-bold text-[var(--color-text)] mb-4">
+                            <span class="en">Rules & Terms</span>
+                            <span class="pt-br hidden">Regras & Termos</span>
+                        </h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                            <div>
+                                <h4 class="font-poppins font-semibold text-[var(--color-text)] mb-2">
+                                    <span class="en">Review Process</span>
+                                    <span class="pt-br hidden">Processo de Revisão</span>
+                                </h4>
+                                <ul class="text-[var(--color-text-muted)] text-sm space-y-2">
+                                    <li class="flex items-start">
+                                        <span class="text-[var(--color-accent)] mr-2">•</span>
+                                        <span class="en">1 review after sketch approval</span>
+                                        <span class="pt-br hidden">1 revisão após aprovação do esboço</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-[var(--color-accent)] mr-2">•</span>
+                                        <span class="en">1 review after first color layer</span>
+                                        <span class="pt-br hidden">1 revisão após primeira camada de cor</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-[var(--color-accent)] mr-2">•</span>
+                                        <span class="en">Final approval before rendering</span>
+                                        <span class="pt-br hidden">Aprovação final antes da renderização</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-poppins font-semibold text-[var(--color-text)] mb-2">
+                                    <span class="en">Copyright & Usage</span>
+                                    <span class="pt-br hidden">Direitos Autorais & Uso</span>
+                                </h4>
+                                <ul class="text-[var(--color-text-muted)] text-sm space-y-2">
+                                    <li class="flex items-start">
+                                        <span class="text-[var(--color-accent)] mr-2">•</span>
+                                        <span class="en">Artist retains copyright</span>
+                                        <span class="pt-br hidden">Artista mantém os direitos autorais</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-[var(--color-accent)] mr-2">•</span>
+                                        <span class="en">Personal use included</span>
+                                        <span class="pt-br hidden">Uso pessoal incluído</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-[var(--color-accent)] mr-2">•</span>
+                                        <span class="en">Commercial use requires separate license</span>
+                                        <span class="pt-br hidden">Uso comercial requer licença separada</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-4 p-4 bg-[var(--color-accent)] rounded-lg">
+                            <p class="text-[var(--color-text)] text-sm text-center">
+                                <span class="en"><strong>Note:</strong> Major changes after approval may incur additional fees. Commercial use and redistribution rights are not included in standard pricing.</span>
+                                <span class="pt-br hidden"><strong>Nota:</strong> Mudanças significativas após aprovação podem gerar taxas adicionais. Uso comercial e direitos de redistribuição não estão incluídos no preço padrão.</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Commission Types Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                        <!-- Bust Commission -->
+                        <div class="commission-card bg-[var(--color-secondary)] rounded-lg p-6 fade-in-up" style="transition-delay: 200ms;">
+                            <div class="w-full h-48 rounded-lg mb-4 overflow-hidden cursor-pointer" onclick="openLightbox('images/bustexample/full.png')">
+                                <img src="images/bustexample/thumbnail.png" alt="Bust Example" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                            </div>
+                            <h3 class="font-poppins text-xl font-bold text-[var(--color-text)] mb-2">
+                                <span class="en">Bust Portrait</span>
+                                <span class="pt-br hidden">Retrato Busto</span>
+                            </h3>
+                            <p class="text-[var(--color-text-muted)] text-sm mb-4">
+                                <span class="en">Head and shoulders portrait with detailed facial features and expression.</span>
+                                <span class="pt-br hidden">Retrato de cabeça e ombros com características faciais e expressão detalhadas.</span>
+                            </p>
+                            <div class="text-center">
+                                <span class="text-2xl font-bold text-[var(--color-accent)]">$50</span>
+                                <span class="text-sm text-[var(--color-text-muted)] block">
+                                    <span class="en">USD</span>
+                                    <span class="pt-br hidden">USD</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Half Body Commission -->
+                        <div class="commission-card bg-[var(--color-secondary)] rounded-lg p-6 fade-in-up" style="transition-delay: 300ms;">
+                            <div class="w-full h-48 rounded-lg mb-4 overflow-hidden cursor-pointer" onclick="openLightbox('images/halfbodyexample/full.png')">
+                                <img src="images/halfbodyexample/thumbnail.png" alt="Half Body Example" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                            </div>
+                            <h3 class="font-poppins text-xl font-bold text-[var(--color-text)] mb-2">
+                                <span class="en">Half Body</span>
+                                <span class="pt-br hidden">Meio Corpo</span>
+                            </h3>
+                            <p class="text-[var(--color-text-muted)] text-sm mb-4">
+                                <span class="en">Portrait from head to waist, including arms and hands with pose.</span>
+                                <span class="pt-br hidden">Retrato da cabeça à cintura, incluindo braços e mãos com pose.</span>
+                            </p>
+                            <div class="text-center">
+                                <span class="text-2xl font-bold text-[var(--color-accent)]">$80</span>
+                                <span class="text-sm text-[var(--color-text-muted)] block">
+                                    <span class="en">USD</span>
+                                    <span class="pt-br hidden">USD</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Full Body Commission -->
+                        <div class="commission-card bg-[var(--color-secondary)] rounded-lg p-6 fade-in-up" style="transition-delay: 400ms;">
+                            <div class="w-full h-48 rounded-lg mb-4 overflow-hidden cursor-pointer" onclick="openLightbox('images/fullbodyexample/full.png')">
+                                <img src="images/fullbodyexample/thumbnail.png" alt="Full Body Example" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                            </div>
+                            <h3 class="font-poppins text-xl font-bold text-[var(--color-text)] mb-2">
+                                <span class="en">Full Body</span>
+                                <span class="pt-br hidden">Corpo Inteiro</span>
+                            </h3>
+                            <p class="text-[var(--color-text-muted)] text-sm mb-4">
+                                <span class="en">Complete character illustration with full body pose, clothing, and background.</span>
+                                <span class="pt-br hidden">Ilustração completa do personagem com pose de corpo inteiro, roupas e fundo.</span>
+                            </p>
+                            <div class="text-center">
+                                <span class="text-2xl font-bold text-[var(--color-accent)]">$120</span>
+                                <span class="text-sm text-[var(--color-text-muted)] block">
+                                    <span class="en">USD</span>
+                                    <span class="pt-br hidden">USD</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Concept Art Commission -->
+                        <div class="commission-card bg-[var(--color-secondary)] rounded-lg p-6 fade-in-up" style="transition-delay: 450ms;">
+                            <div class="w-full h-48 rounded-lg mb-4 overflow-hidden cursor-pointer" onclick="openLightbox('images/conceptartexample/full.png')">
+                                <img src="images/conceptartexample/thumbnail.png" alt="Concept Art Example" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                            </div>
+                            <h3 class="font-poppins text-xl font-bold text-[var(--color-text)] mb-2">
+                                <span class="en">Concept Art</span>
+                                <span class="pt-br hidden">Arte Conceitual</span>
+                            </h3>
+                            <p class="text-[var(--color-text-muted)] text-sm mb-4">
+                                <span class="en">Character design, environment concepts, or prop designs for games, books, or films.</span>
+                                <span class="pt-br hidden">Design de personagem, conceitos de ambiente ou design de props para jogos, livros ou filmes.</span>
+                            </p>
+                            <div class="text-center">
+                                <span class="text-2xl font-bold text-[var(--color-accent)]">$150</span>
+                                <span class="text-sm text-[var(--color-text-muted)] block">
+                                    <span class="en">USD</span>
+                                    <span class="pt-br hidden">USD</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Book Cover Commission -->
+                        <div class="commission-card bg-[var(--color-secondary)] rounded-lg p-6 fade-in-up" style="transition-delay: 500ms;">
+                            <div class="w-full h-48 rounded-lg mb-4 overflow-hidden cursor-pointer" onclick="openLightbox('images/bookcoverexample/full.png')">
+                                <img src="images/bookcoverexample/thumbnail.png" alt="Book Cover Example" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                            </div>
+                            <h3 class="font-poppins text-xl font-bold text-[var(--color-text)] mb-2">
+                                <span class="en">Book Cover</span>
+                                <span class="pt-br hidden">Capa de Livro</span>
+                            </h3>
+                            <p class="text-[var(--color-text-muted)] text-sm mb-4">
+                                <span class="en">Professional book cover illustration with typography integration and print-ready format.</span>
+                                <span class="pt-br hidden">Ilustração profissional de capa de livro com integração de tipografia e formato para impressão.</span>
+                            </p>
+                            <div class="text-center">
+                                <span class="text-2xl font-bold text-[var(--color-accent)]">$200</span>
+                                <span class="text-sm text-[var(--color-text-muted)] block">
+                                    <span class="en">USD</span>
+                                    <span class="pt-br hidden">USD</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Couple Commission -->
+                        <div class="commission-card bg-[var(--color-secondary)] rounded-lg p-6 fade-in-up" style="transition-delay: 550ms;">
+                            <div class="w-full h-48 rounded-lg mb-4 overflow-hidden cursor-pointer" onclick="openLightbox('images/coupleexample/full.png')">
+                                <img src="images/coupleexample/thumbnail.png" alt="Couple Example" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                            </div>
+                            <h3 class="font-poppins text-xl font-bold text-[var(--color-text)] mb-2">
+                                <span class="en">Couple Portrait</span>
+                                <span class="pt-br hidden">Retrato de Casal</span>
+                            </h3>
+                            <p class="text-[var(--color-text-muted)] text-sm mb-4">
+                                <span class="en">Romantic couple illustration with interaction, poses, and optional background scene.</span>
+                                <span class="pt-br hidden">Ilustração romântica de casal com interação, poses e cena de fundo opcional.</span>
+                            </p>
+                            <div class="text-center">
+                                <span class="text-2xl font-bold text-[var(--color-accent)]">$180</span>
+                                <span class="text-sm text-[var(--color-text-muted)] block">
+                                    <span class="en">USD</span>
+                                    <span class="pt-br hidden">USD</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Combos Section -->
+                    <div class="mt-16 fade-in-up" style="transition-delay: 600ms;">
+                        <h3 class="font-poppins text-2xl font-bold text-[var(--color-text)] mb-8 text-center">
+                            <span class="en">Special Combos</span>
+                            <span class="pt-br hidden">Combos Especiais</span>
+                        </h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <!-- Combo 1: Couple -->
+                            <div class="combo-card bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-accent)] rounded-lg p-6 text-center relative overflow-hidden">
+                                <div class="absolute inset-0 bg-black/10"></div>
+                                <div class="relative z-10">
+                                    <h4 class="font-poppins text-xl font-bold text-white mb-2">
+                                        <span class="en">Couple Combo</span>
+                                        <span class="pt-br hidden">Combo Casal</span>
+                                    </h4>
+                                    <p class="text-white/90 text-sm mb-4">
+                                        <span class="en">Two individual portraits + couple portrait</span>
+                                        <span class="pt-br hidden">Dois retratos individuais + retrato de casal</span>
+                                    </p>
+                                    <div class="text-center">
+                                        <span class="text-3xl font-bold text-white">$280</span>
+                                        <span class="text-sm text-white/80 block">
+                                            <span class="en">Save $60</span>
+                                            <span class="pt-br hidden">Economize $60</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Combo 2: Protagonist -->
+                            <div class="combo-card bg-gradient-to-br from-[var(--color-secondary)] to-[var(--color-primary)] rounded-lg p-6 text-center relative overflow-hidden">
+                                <div class="absolute inset-0 bg-black/10"></div>
+                                <div class="relative z-10">
+                                    <h4 class="font-poppins text-xl font-bold text-white mb-2">
+                                        <span class="en">Protagonist Combo</span>
+                                        <span class="pt-br hidden">Combo Protagonista</span>
+                                    </h4>
+                                    <p class="text-white/90 text-sm mb-4">
+                                        <span class="en">Bust + Half Body + Full Body</span>
+                                        <span class="pt-br hidden">Busto + Meio Corpo + Corpo Inteiro</span>
+                                    </p>
+                                    <div class="text-center">
+                                        <span class="text-3xl font-bold text-white">$220</span>
+                                        <span class="text-sm text-white/80 block">
+                                            <span class="en">Save $30</span>
+                                            <span class="pt-br hidden">Economize $30</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Combo 3: Creation -->
+                            <div class="combo-card bg-gradient-to-br from-[var(--color-accent)] to-[var(--color-secondary)] rounded-lg p-6 text-center relative overflow-hidden">
+                                <div class="absolute inset-0 bg-black/10"></div>
+                                <div class="relative z-10">
+                                    <h4 class="font-poppins text-xl font-bold text-white mb-2">
+                                        <span class="en">Creation Combo</span>
+                                        <span class="pt-br hidden">Combo Criação</span>
+                                    </h4>
+                                    <p class="text-white/90 text-sm mb-4">
+                                        <span class="en">Full Body + Concept Art</span>
+                                        <span class="pt-br hidden">Corpo Inteiro + Arte Conceitual</span>
+                                    </p>
+                                    <div class="text-center">
+                                        <span class="text-3xl font-bold text-white">$250</span>
+                                        <span class="text-sm text-white/80 block">
+                                            <span class="en">Save $20</span>
+                                            <span class="pt-br hidden">Economize $20</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Info -->
+                    <div class="mt-12 bg-[var(--color-secondary)] rounded-lg p-6 fade-in-up" style="transition-delay: 500ms;">
+                        <h3 class="font-poppins text-xl font-bold text-[var(--color-text)] mb-4">
+                            <span class="en">Additional Options</span>
+                            <span class="pt-br hidden">Opções Adicionais</span>
+                        </h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+                            <div>
+                                <p class="text-[var(--color-text-muted)]">
+                                    <span class="en"><strong>Background:</strong> +$20-40</span>
+                                    <span class="pt-br hidden"><strong>Fundo:</strong> +$20-40</span>
+                                </p>
+                                <p class="text-[var(--color-text-muted)]">
+                                    <span class="en"><strong>Multiple Characters:</strong> +50% per character</span>
+                                    <span class="pt-br hidden"><strong>Múltiplos Personagens:</strong> +50% por personagem</span>
+                                </p>
+                            </div>
+                            <div>
+                                <p class="text-[var(--color-text-muted)]">
+                                    <span class="en"><strong>Rush Order:</strong> +30%</span>
+                                    <span class="pt-br hidden"><strong>Pedido Urgente:</strong> +30%</span>
+                                </p>
+                                <p class="text-[var(--color-text-muted)]">
+                                    <span class="en"><strong>Commercial Use:</strong> +100%</span>
+                                    <span class="pt-br hidden"><strong>Uso Comercial:</strong> +100%</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="mt-8 fade-in-up" style="transition-delay: 650ms;">
+                        <a href="https://www.instagram.com/rige04" target="_blank" class="inline-block bg-[var(--color-primary)] text-[var(--color-bg)] font-bold py-3 px-8 rounded-lg hover:brightness-110 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                           <span class="en">Start Your Commission</span>
+                           <span class="pt-br hidden">Iniciar Encomenda</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About & Contact Section -->
+            <section id="about" class="mt-16 py-16 border-t border-[var(--color-secondary)]">
+                <div class="text-center max-w-2xl mx-auto">
+                    <h2 class="font-poppins text-3xl font-bold text-[var(--color-text)] fade-in-up"><span class="en">About & Contact</span><span class="pt-br hidden">Sobre & Contato</span></h2>
+                    <p class="mt-4 text-[var(--color-text-muted)] leading-relaxed fade-in-up" style="transition-delay: 100ms;">
+                        <span class="en">I'm a Brazilian freelance illustrator collaborating on literature and gaming projects with independent creators worldwide. I use diverse techniques to create custom artworks that perfectly match each client's vision. Have a project in mind or just want to say hi? Feel free to reach out.</span>
+                        <span class="pt-br hidden">Sou uma ilustradora freelancer brasileira colaborando em projetos de literatura e jogos. Utilizo diversas técnicas para criar artes personalizadas que se alinham à visão de cada cliente. Tem um projeto em mente ou só quer dizer oi? Entre em contato.</span>
+                    </p>
+                    <div class="mt-8 fade-in-up" style="transition-delay: 200ms;">
+                        <a href="mailto:hello@rige04.com" class="text-lg font-semibold text-[var(--color-accent)] hover:underline decoration-wavy transition duration-300">hello@rige04.com</a>
+                    </div>
+                </div>
+            </section>
+             <!-- Footer -->
+            <footer class="text-center mt-16 py-6 border-t border-[var(--color-secondary)]">
+                <p class="text-sm text-[var(--color-text-muted)]">&copy; <span id="year"></span> Rige04 Portfolio. <span class="en">All rights reserved.</span><span class="pt-br hidden">Todos os direitos reservados.</span></p>
+            </footer>
+        </main>
+    </div>
+    
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center cursor-pointer p-4">
+        <img id="lightbox-img" src="" alt="Enlarged artwork" class="rounded-lg shadow-2xl">
+        <button id="close-lightbox" class="absolute top-6 right-6 text-white text-5xl font-light hover:text-[var(--color-accent)] transition-colors">&times;</button>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+/* Custom Styles and Tailwind CSS Configuration using your original palette */
+:root {
+    --color-bg: #386641;                      /* Forest Green */
+    --color-text: #f2e8cf;                    /* Cream */
+    --color-text-muted: rgba(242, 232, 207, 0.7); /* Muted Cream */
+    --color-primary: #a7c957;                 /* Light Green (for links/buttons) */
+    --color-secondary: #6a994e;               /* Sage Green */
+    --color-accent: #f28482;                  /* Coral Pink */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text);
+    background: linear-gradient(135deg, #386641 0%, #4a7c59 25%, #386641 50%, #2d5a3a 75%, #386641 100%);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease-in-out infinite;
+    position: relative;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* Animated gradient background */
+@keyframes gradientShift {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Subtle texture overlay */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 20% 80%, rgba(167, 201, 87, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(242, 132, 130, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(106, 153, 78, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Floating particles effect */
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(2px 2px at 20px 30px, rgba(242, 232, 207, 0.1), transparent),
+        radial-gradient(2px 2px at 40px 70px, rgba(167, 201, 87, 0.1), transparent),
+        radial-gradient(1px 1px at 90px 40px, rgba(242, 132, 130, 0.1), transparent),
+        radial-gradient(1px 1px at 130px 80px, rgba(242, 232, 207, 0.1), transparent),
+        radial-gradient(2px 2px at 160px 30px, rgba(167, 201, 87, 0.1), transparent);
+    background-repeat: repeat;
+    background-size: 200px 100px;
+    animation: float 20s linear infinite;
+    pointer-events: none;
+    z-index: -1;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-100px);
+    }
+}
+
+/* Enhanced container with subtle backdrop blur */
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Add subtle glass effect to main sections */
+.portfolio-container,
+.commission-card,
+.combo-card,
+.bg-\[var\(--color-secondary\)\] {
+    backdrop-filter: blur(10px);
+    background: rgba(106, 153, 78, 0.9) !important;
+    border: 1px solid rgba(242, 232, 207, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+/* Enhanced portfolio container specifically */
+.portfolio-container {
+    backdrop-filter: blur(15px);
+    background: rgba(106, 153, 78, 0.9) !important;
+    border: 1px solid rgba(242, 232, 207, 0.15);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Enhanced combo cards with better glass effect */
+.combo-card {
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.combo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Scroll animations */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s cubic-bezier(0.645, 0.045, 0.355, 1), transform 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Nav link style */
+.nav-link {
+    transition: all 0.2s ease-in-out;
+    color: var(--color-text-muted);
+}
+.nav-link:hover, .nav-link.active {
+    color: var(--color-text);
+    background-color: rgba(242, 232, 207, 0.1); /* Cream with low opacity */
+}
+
+/* Enhanced nav link with accent color on hover */
+.nav-link:hover {
+    color: var(--color-accent);
+    transform: translateY(-1px);
+}
+
+/* Lightbox styles */
+#lightbox {
+    transition: opacity 0.3s ease-in-out;
+}
+#lightbox img {
+    max-width: 90vw;
+    max-height: 85vh;
+    transition: transform 0.3s ease-in-out;
+}
+#lightbox.hidden {
+    pointer-events: none;
+}
+
+/* Portfolio item hover effects with accent color */
+.portfolio-item:hover {
+    box-shadow: 0 10px 25px rgba(242, 132, 130, 0.3); /* Accent color shadow */
+}
+
+/* Horizontal scroll container styles */
+.portfolio-scroll-container {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: hidden; /* Prevent vertical scrolling */
+    border-radius: 1rem;
+    overflow: hidden;
+    background: rgba(242, 232, 207, 0.05);
+    border: 1px solid rgba(242, 232, 207, 0.1);
+    padding: 1rem;
+}
+
+/* Custom horizontal scrollbar styling */
+.portfolio-scroll-container::-webkit-scrollbar {
+    height: 8px; /* Height of horizontal scrollbar */
+}
+
+.portfolio-scroll-container::-webkit-scrollbar-track {
+    background: var(--color-secondary);
+    border-radius: 4px;
+}
+
+.portfolio-scroll-container::-webkit-scrollbar-thumb {
+    background: var(--color-accent);
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.portfolio-scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #e57373; /* Slightly lighter accent color on hover */
+}
+
+/* Firefox scrollbar styling */
+.portfolio-scroll-container {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-accent) var(--color-secondary);
+}
+
+/* Portfolio items in horizontal scroll */
+.portfolio-item {
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-4px);
+}
+
+/* Scroll hint animation */
+.portfolio-container .text-center p {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.7;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.social-links a:hover img {
+    box-shadow: 0 0 10px 0 rgba(242, 132, 130, 0.5);
+}
+
+/* Language switcher active state with accent color */
+.lang-btn[data-active="true"] {
+    background-color: var(--color-accent) !important;
+    color: var(--color-bg) !important;
+}
+
+/* Ensure aspect ratio for portfolio images */
+@layer utilities {
+    @variants responsive {
+        .aspect-w-1 { --tw-aspect-w: 1; }
+        .aspect-h-1 { --tw-aspect-h: 1; }
+        .aspect-w-9 { --tw-aspect-w: 9; }
+        .aspect-h-16 { --tw-aspect-h: 16; }
+        .aspect-content {
+            position: relative;
+            width: 100%;
+            padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+        }
+        .aspect-content > * {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    }
+} 
