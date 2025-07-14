@@ -134,6 +134,8 @@ body::after {
     border-radius: 50%;
     width: 10rem;
     height: 10rem;
+    object-fit: cover;
+    object-position: center;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     border: 2px solid var(--color-accent);
     box-shadow: 0 10px 25px #f2848288;
