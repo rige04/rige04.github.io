@@ -1227,15 +1227,26 @@ body::after {
 }
 
 .additional-grid {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
     text-align: left;
 }
 
+.additional-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
 @media (min-width: 768px) {
     .additional-grid {
-        grid-template-columns: repeat(2, 1fr);
+        flex-direction: row;
+        gap: 2rem;
+    }
+    
+    .additional-column {
+        flex: 1;
         gap: 2rem;
     }
 }
@@ -1248,6 +1259,8 @@ body::after {
     font-size: 1rem;
     line-height: 1.6;
     padding: 1.5rem;
+    min-height: 4rem;
+    height: 100%;
     background: linear-gradient(135deg, rgba(242, 232, 207, 0.08) 0%, rgba(242, 232, 207, 0.05) 100%);
     border-radius: 1rem;
     border: 1px solid rgba(242, 232, 207, 0.15);
@@ -1322,6 +1335,7 @@ body::after {
     .additional-item {
         padding: 1.25rem;
         font-size: 0.95rem;
+        min-height: 3.5rem;
     }
 }
 
